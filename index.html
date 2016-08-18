@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <title>New Wikipedia Categories</title>
 
-<style>html { font-family: sans-serif }</style>
+<style>body { font-family: sans-serif }</style>
 
 <body>
 
@@ -10,18 +10,6 @@
 
 <p>For example, here are 10 recently created Wikipedia categories, fetched from <a href="https://www.mediawiki.org/wiki/API:Main_page"></a>the Wikipedia API</a>:</h2>
 
-<noscript>Enable JavaScript</noscript>
+<script src="fetch-compiled.js"></script>
 
-<script>
-fetch('https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&list=recentchanges&rctype=new&rcnamespace=14')
-  .then(response => response.json())
-  .then(data => data.query.recentchanges)
-  .then(items => items.forEach(item => {
-    var a = document.createElement('a')
-    a.href = 'https://en.wikipedia.org/?curid=' + item.pageid
-    a.target = '_blank'
-    a.style.display = 'block'
-    a.textContent = item.title
-    document.body.appendChild(a)
-  }))
-</script>
+<noscript>Enable JavaScript</noscript>

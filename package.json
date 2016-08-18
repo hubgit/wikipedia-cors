@@ -1,0 +1,23 @@
+{
+  "name": "wikipedia-cors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch.js",
+  "dependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.8.0"
+  },
+  "scripts": {
+    "compile": "babel --watch --plugins transform-es2015-arrow-functions --out-file fetch-compiled.js fetch.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubgit/wikipedia-cors.git"
+  },
+  "author": "Alf Eaton <eaton.alf@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hubgit/wikipedia-cors/issues"
+  },
+  "homepage": "https://github.com/hubgit/wikipedia-cors#readme"
+}
