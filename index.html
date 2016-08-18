@@ -2,7 +2,9 @@
 <meta charset="utf-8">
 <title>New Wikipedia Categories</title>
 <style>html { font-family: sans-serif }</style>
-<h1>10 recently-created Wikipedia categories (CORS demonstration)</h1>
+<body>
+<p>Add <code>origin=*</code> to Wikipedia API requests, and the response will contain an <code>Access-Control-Allow-Origin: *</code> header, allowing it to be accessed by JavaScript running on a different domain.</p>
+<p>For example, here are 10 recently created Wikipedia categories, fetched from <a href="https://www.mediawiki.org/wiki/API:Main_page"></a>the Wikipedia API</a>:</h2>
 <noscript>Enable JavaScript</noscript>
 <script>
 fetch('https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&list=recentchanges&rctype=new&rcnamespace=14')
